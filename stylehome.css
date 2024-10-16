@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #A1A6AA;
+    
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT",  "Trebuchet MS", sans-serif;
+    list-style: none;
+  }
+  
+  
+
+  .btnConocer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 5%;
+  }
+
+
+.btnConocer a {
+  text-decoration: none;
+  border: 2px solid #010100;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+span {
+  position: relative;
+  z-index: 3;
+}
+
+.btnConocer a {
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+
+.btnConocer a:hover {
+  color: #000000;
+  transition: all 0.5s ease-in-out;
+}
+
+.btnConocer a::before,
+.btnConocer a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: all 0.5s ease-in-out;
+  border-radius: 25px;
+}
+
+.btnConocer a::before {
+  transform: scaleY(1);
+}
+
+.btnConocer a:hover::before {
+  transform: scaleY(0);
+}
+
+.btnConocer a::after {
+  transform: scaleX(1);
+}
+
+.btnConocer a:hover::after {
+  transform: scaleX(0);
+}
+
+.txtHome{
+color: white;
+padding: 0px;
+margin: 0px;
+letter-spacing: 5px;
+padding-left: 5%;
+padding-top: 20%;
+font-size: 50px;
+}
+
+.tstdesc{
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 5px;
+  padding-left: 5%;
+  padding-top: .2%;
+  font-size: 20px;
+}

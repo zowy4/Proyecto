@@ -1,0 +1,156 @@
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    padding: 0%;
+    margin: 0%;
+    width: auto;
+    height: 93px;
+    display: flex;
+    justify-content: space-between; /*  horizontal */
+    align-items: center; /*  vertical */
+    position: relative;
+
+}
+
+
+
+
+.izquierda {
+  margin-right: auto;
+}
+
+.derecha {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.titulo {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 26px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icoNav{
+    height: 26px; 
+    width: 26px;
+    padding: 10px;
+ 
+  
+  
+}
+  
+  .topnav a:hover {
+    color: white;
+  }
+
+  .centro{
+    background-image: url("https://media1.tenor.com/m/cL22FGUgYXAAAAAC/mj-michael.gif");
+    width: auto;
+    height: 91%;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+  }
+.menu{
+    height: 26px; 
+    width: 26px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    margin: 10px;
+    
+
+
+}
+
+
+.menu:hover {
+    background-color: white;
+    border: 2px solid black;
+
+}
+.menu:hover .bar {
+    background-color: black;
+}    
+
+.menu.active {
+    background-color: white;
+    border: 2px solid black;
+
+}
+.menu.active .bar {
+    background-color: black;
+}   
+.menu.active .bar:nth-last-child(1){
+    transform: translateY(-6px)  rotate(-45deg);
+}
+.menu.active .bar:nth-last-child(2){
+    opacity: 0;
+}
+.menu.active .bar:nth-last-child(3){
+    transform: translateY(6px)  rotate(45deg);
+}
+
+.bar{
+height: 2px;
+width: 16px;
+background-color: white;
+border-radius: 6px;
+transition: 200ms ease-in-out;
+}
+
+.menuDesplegable {
+    height: 100vh;
+    width: 8%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    transform: translateX(-100vw);
+    transition: 300ms ease-in-out; 
+    position: absolute;
+    z-index: 1000;
+}
+
+.click {
+    transform: translateX(0);
+}
+
+.link {
+    color: black;
+    font-size: 22px;
+    padding: 8px;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    
+}
+
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
